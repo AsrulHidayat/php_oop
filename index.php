@@ -26,8 +26,17 @@
 
     // [3] Method di children class
         // children class bisa mempunya method sendiri
-    $guru1->aktifitasGuru();  
+    $guru1->aktifitasGuru(); 
+    
+    // [4] Override Method
+            // contoh sayhello yang dipanggil dari parentnya yaitu orang dan kita yang membuat childrennya maka saecara otomatis yang terbaca ialah yang ada di kelas guru atau childrennya.
 
+    echo "<br/>";
+    $guru1->sayhello(); 
+
+
+
+    
     
 
 

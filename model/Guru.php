@@ -27,6 +27,11 @@
         public function aktifitasGuru() {
             echo "Saya mengajar TIK";
         }
-    
+        
+        // [4] Override Method
+            // contoh sayhello yang dipanggil dari parentnya yaitu orang dan kita yang membuat childrennya maka saecara otomatis yang terbaca ialah yang ada di kelas guru atau childrennya.
+        public function sayhello() {
+            echo "Ini adalah fungsi override dari class children, bukan class parent.";
+        }
     }
 ?>
