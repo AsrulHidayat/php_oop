@@ -21,9 +21,14 @@
     // [2] Mengakses properti dan method dari class children
     require "model/Guru.php";
     $guru1 = new Guru("Budi", 39);
-    // [2.1]
-    // echo $guru1->nama;
-    $guru1->sayhello();
+    // echo $guru1->nama;  // [2.1]
+    // $guru1->sayhello(); // [2.2]
+
+    // [3] Method di children class
+        // children class bisa mempunya method sendiri
+    $guru1->aktifitasGuru();  
+
+    
 
 
 

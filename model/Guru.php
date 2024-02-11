@@ -17,10 +17,16 @@
     
         // require yaitu menghubungkan atau memanggil class orang ke dalam class ini  
     require "model/Orang.php";
-    
+
         // Membuat children agar bisa di inheritance
         // untuk di inheritance caranya adalah dengan menambahkan keyword "extends" dan nama class yang dituju 
     class Guru extends Orang {
+
+        // [3] Method di children class
+            // children class bisa mempunyai method sendiri
+        public function aktifitasGuru() {
+            echo "Saya mengajar TIK";
+        }
     
     }
 ?>
