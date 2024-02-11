@@ -1,36 +1,40 @@
 <?php
-    // CONSTRUCTOR & DESTRUCTOR (MATERI 2)
-    // Constructor : Dijalankan ketika objek dibuat
-    class Robot {
-        public $name;
-        public $color;
-        public $size;
 
-        // // [1] Testing 
-        // // function __construct : otomatis file function __construct dijalankan terlebih dahulu ketika objek dibuat
-        // function __construct() {
-        //     echo "fungsi construct sedang dijalankan";
-        // }
-        // function test() {
-        //     echo "ini adalah function test";
-        // }
+    // // CONSTRUCTOR & DESTRUCTOR (MATERI 2)
+    // // Constructor : Dijalankan ketika objek dibuat
+    // class Robot {
+    //     public $name;
+    //     public $color;
+    //     public $size;
 
-        // Property diisi ke dalam construct, dengan kata lain ketika objek dibuat otomatis property akan terbuat sendiri, sehingga kita tak harus memanggil lagi nama objek di dalam property tersebut berulang kali.
-        function __construct($name, $color, $size) {
-            $this->name = $name;
-            $this->color = $color;
-            $this->size = $size;
-        }
+    //     // // [1] Testing 
+    //     // // function __construct : otomatis file function __construct dijalankan terlebih dahulu ketika objek dibuat
+    //     // function __construct() {
+    //     //     echo "fungsi construct sedang dijalankan";
+    //     // }
+    //     // function test() {
+    //     //     echo "ini adalah function test";
+    //     // }
 
-    // Destructor : Dijalankan ketika objek telah selesai dikerjakan semua 
-        function __destruct() {
-            echo "ini adalah isi dari function destruct";
-        }
-    }
+    //     // Property diisi ke dalam construct, dengan kata lain ketika objek dibuat otomatis property akan terbuat sendiri, sehingga kita tak harus memanggil lagi nama objek di dalam property tersebut berulang kali.
+
+    //     // [2]
+    //     function __construct($name, $color, $size) {
+    //         $this->name = $name;
+    //         $this->color = $color;
+    //         $this->size = $size;
+    //     }
+
+    // // Destructor : Dijalankan ketika objek telah selesai dikerjakan semua 
+    //     function __destruct() {
+    //         echo "ini adalah isi dari function destruct";
+    //     }
+    // }
 
 
 
 
+    
 
 
 // // CLASS & OBJECT (MATERI 1)

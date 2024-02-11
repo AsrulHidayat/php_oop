@@ -1,20 +1,55 @@
 <?php
-    // CONSTRUCTOR & DESTRUCTOR (MATERI 2)
-    require "Model/Robot.php";
+    // INHERITANCE-PEWARISAN (MATERII 3)
 
-    // Constructor : Dijalankan ketika objek dibuat
-    // Perhatikan dengan materi 1, jauh berbeda dalam pemanggilannya. Yang mana ini lebih singkat
-    $robot1 = new Robot("Optimus Prime","blue-white-red", "large");
-    var_dump($robot1);
+    // Contoh Inheritance pada manusia
+        // Inhertiteance => pewarisan/warisan
+        // Pewarisan => Sesuatu yang diturunkan oleh orang tua (parent) ke anaknya (children)
+        // Apa saja contoh yang diwariskan?
+        // Warna mata, Warna rambut, bentuk rambut, dll
 
-    echo "<br><br>";
-    // unset : dihancurkan. 
-    // ketika memakai unset program akan  terpotong di bagian atas atau menghancurkan objek diatas sehingga destruct akan berjalan kemudian dilanjutkan dengan kode program di bawah penempatana unset.
-    unset($robot1);
+    // Contoh pada penerapannya di program PHP
+        // Apa saja contoh yang diwariskan PADA CLASS
+        
+        // property dan method
+        // jadi, child class bisa mempunyai property dan method yang dimiliki parentnya ditambah bisa juga punya property dan method sendiri.
 
-    echo "<br><br>";
-    echo "script sudah selesai";
-    echo "<br>";
+    // // [1] Membuat inherited class
+    // require "model/Guru.php";
+    // $guru1 = new Guru("Budi", 39);
+    // var_dump($guru1);
+
+    // [2] Mengakses properti dan method dari class children
+    require "model/Guru.php";
+    $guru1 = new Guru("Budi", 39);
+    // [2.1]
+    // echo $guru1->nama;
+    $guru1->sayhello();
+
+
+
+
+
+
+    // // CONSTRUCTOR & DESTRUCTOR (MATERI 2)
+    // require "Model/Robot.php";
+
+    // // Constructor : Dijalankan ketika objek dibuat
+    // // Perhatikan dengan materi 1, jauh berbeda dalam pemanggilannya. Yang mana ini lebih singkat
+    // $robot1 = new Robot("Optimus Prime","blue-white-red", "large");
+    // var_dump($robot1);
+
+    // echo "<br><br>";
+    // // unset : dihancurkan. 
+    // // ketika memakai unset program akan  terpotong di bagian atas atau menghancurkan objek diatas sehingga destruct akan berjalan kemudian dilanjutkan dengan kode program di bawah penempatana unset.
+    // unset($robot1);
+
+    // echo "<br><br>";
+    // echo "script sudah selesai";
+    // echo "<br>";
+
+
+
+
 
 
 
@@ -52,4 +87,7 @@
 //     var_dump($robot1);
 //     echo"<br>";
 //     var_dump($robot2);
+
+
+
 ?>
