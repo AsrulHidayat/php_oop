@@ -1,5 +1,5 @@
 <?php
-    // VISIBILITY / Access Modifier
+    // VISIBILITY / Access Modifier (MATERI 4)
         // Ialah kemampuan untuk mengakses properti method di dalam suatu class. 
             // Jenis-jenis visibility
             // public, protected, private
