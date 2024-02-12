@@ -33,5 +33,7 @@
         public function sayhello() {
             echo "Ini adalah fungsi override dari class children, bukan class parent.";
         }
+
+        
     }
 ?>

@@ -1,38 +1,52 @@
 <?php
-    // INHERITANCE-PEWARISAN (MATERII 3)
+    // VISIBILITY / Access Modifier
+        // Ialah kemampuan untuk mengakses properti method di dalam suatu class. 
+            // Jenis-jenis visibility
+            // public, protected, private
+            // public : bisa diakses oleh semua orang
+            // protected : bisa diakses oleh orang yang memiliki class ini
+            // private : bisa diakses oleh orang yang memiliki class ini yang sama dengan nama class ini (child class)
+                
 
-    // Contoh Inheritance pada manusia
-        // Inhertiteance => pewarisan/warisan
-        // Pewarisan => Sesuatu yang diturunkan oleh orang tua (parent) ke anaknya (children)
-        // Apa saja contoh yang diwariskan?
-        // Warna mata, Warna rambut, bentuk rambut, dll
 
-    // Contoh pada penerapannya di program PHP
-        // Apa saja contoh yang diwariskan PADA CLASS
+
+
+
+
+    // // INHERITANCE-PEWARISAN (MATERII 3)
+
+    // // Contoh Inheritance pada manusia
+    //     // Inhertiteance => pewarisan/warisan
+    //     // Pewarisan => Sesuatu yang diturunkan oleh orang tua (parent) ke anaknya (children)
+    //     // Apa saja contoh yang diwariskan?
+    //     // Warna mata, Warna rambut, bentuk rambut, dll
+
+    // // Contoh pada penerapannya di program PHP
+    //     // Apa saja contoh yang diwariskan PADA CLASS
         
-        // property dan method
-        // jadi, child class bisa mempunyai property dan method yang dimiliki parentnya ditambah bisa juga punya property dan method sendiri.
+    //     // property dan method
+    //     // jadi, child class bisa mempunyai property dan method yang dimiliki parentnya ditambah bisa juga punya property dan method sendiri.
 
-    // // [1] Membuat inherited class
+    // // // [1] Membuat inherited class
+    // // require "model/Guru.php";
+    // // $guru1 = new Guru("Budi", 39);
+    // // var_dump($guru1);
+
+    // // [2] Mengakses properti dan method dari class children
     // require "model/Guru.php";
     // $guru1 = new Guru("Budi", 39);
-    // var_dump($guru1);
+    // // echo $guru1->nama;  // [2.1]
+    // // $guru1->sayhello(); // [2.2]
 
-    // [2] Mengakses properti dan method dari class children
-    require "model/Guru.php";
-    $guru1 = new Guru("Budi", 39);
-    // echo $guru1->nama;  // [2.1]
-    // $guru1->sayhello(); // [2.2]
-
-    // [3] Method di children class
-        // children class bisa mempunya method sendiri
-    $guru1->aktifitasGuru(); 
+    // // [3] Method di children class
+    //     // children class bisa mempunya method sendiri
+    // $guru1->aktifitasGuru(); 
     
-    // [4] Override Method
-            // contoh sayhello yang dipanggil dari parentnya yaitu orang dan kita yang membuat childrennya maka saecara otomatis yang terbaca ialah yang ada di kelas guru atau childrennya.
+    // // [4] Override Method
+    //         // contoh sayhello yang dipanggil dari parentnya yaitu orang dan kita yang membuat childrennya maka saecara otomatis yang terbaca ialah yang ada di kelas guru atau childrennya.
 
-    echo "<br/>";
-    $guru1->sayhello(); 
+    // echo "<br/>";
+    // $guru1->sayhello(); 
 
 
 
